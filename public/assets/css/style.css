@@ -181,7 +181,7 @@ img.img-polaroid {
 header {
   background: #fff;
   margin: 0;
-  padding: 0 0 20px;
+  padding: 0 0 0px;
   position: relative;
   z-index: 2000;
   -webkit-box-shadow: 0 2px 4px -2px #ddd;
@@ -957,6 +957,7 @@ select.selectmenu {
   font-size: 32px;
   font-weight: 700;
   letter-spacing: -2px;
+  text-align: center;
 }
 
 /* --- breadcrumbs --- */
@@ -2768,9 +2769,20 @@ ul.the-icons {
   background: url(../img/bodybg/bg10.png) repeat left top;
 }
 
-.nama-desa {
-  font-weight: bold; /* Membuat tulisan menjadi tebal */
-  font-size: 16px; /* Ukuran font */
+.namadesa {
+  padding-left: 10px; /* Menambahkan jarak kiri agar tidak terlalu dekat dengan logo */
+}
+
+.namadesa .nama-atas {
+  font-weight: bold; /* Membuat teks Desa Istana menjadi tebal */
+  font-size: 18px; /* Ukuran font untuk Desa Istana */
+  margin-bottom: 0; /* Menambahkan jarak bawah antara Desa Istana dan Kabupaten Ketapang */
+}
+
+.namadesa .nama-bawah {
+  font-weight: bold; /* Membuat teks Kabupaten Ketapang menjadi tebal */
+  font-size: 12px; /* Ukuran font untuk Kabupaten Ketapang */
+  margin-top: 0; /* Mengurangi margin atas antara Desa Istana dan Kabupaten Ketapang */
 }
 
 /* Theme Styler :: End */

@@ -14,5 +14,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('index');
+    return view('content.home');
+});
+
+Route::get('/lapakdesa', function () {
+    return view('content.lapak');
 });

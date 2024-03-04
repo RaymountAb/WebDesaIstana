@@ -31,11 +31,18 @@
 
         <div class="row nomargin">
             <div class="span4">
-                <div class="logo">
-                    <a href="index.html"><img src="assets/img/logo.png" alt="" /></a>
-                </div>
-                <div class="nama-desa">
-                    Desa Istana <br> Kabupaten Ketapang
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="logo">
+                            <a href="index.html"><img src="assets/img/logokantor.png" alt="" /></a>
+                        </div>
+                    </div>
+                    <div class="col-sm-8">
+                        <div class="namadesa">
+                            <div class="nama-atas">Website Resmi Desa Istana</div>
+                            <div class="nama-bawah">Kec. Sandai, Kabupaten Ketapang, Kalimantan Barat</div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="span8">
@@ -49,23 +56,23 @@
                                 <li class="dropdown">
                                     <a href="#">Pemerintah Desa<i class="icon-angle-down"></i></a>
                                     <ul class="dropdown-menu">
-                                        <li><a href="typography.html">Typography</a></li>
-                                        <li><a href="components.html">Components</a></li>
+                                        <li><a href="typography.html">Visi dan Misi</a></li>
+                                        <li><a href="components.html">Pemerintah Desa</a></li>
                                     </ul>
                                 </li>
                                 <li class="dropdown">
                                     <a href="#">Profil Desa <i class="icon-angle-down"></i></a>
                                     <ul class="dropdown-menu">
-                                        <li><a href="about.html">About us</a></li>
-                                        <li><a href="faq.html">FAQ</a></li>
-                                        <li><a href="team.html">Team</a></li>
+                                        <li><a href="about.html">Profil Wilayah Desa</a></li>
+                                        <li><a href="faq.html">Sejarah Desa</a></li>
+                                        <li><a href="team.html">Status IDM 2023</a></li>
                                     </ul>
                                 </li>
                                 <li class="dropdown">
                                     <a href="#">Regulasi<i class="icon-angle-down"></i></a>
                                     <ul class="dropdown-menu">
-                                        <li><a href="portfolio-2cols.html">Portfolio 2 columns</a></li>
-                                        <li><a href="portfolio-3cols.html">Portfolio 3 columns</a></li>
+                                        <li><a href="portfolio-2cols.html">Produk Hukum</a></li>
+                                        <li><a href="portfolio-3cols.html">Informasi Publik</a></li>
                                     </ul>
                                 </li>
                                 <li>
