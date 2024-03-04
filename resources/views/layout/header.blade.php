@@ -1,31 +1,9 @@
 <header>
     <div class="top">
         <div class="container">
-            <div class="row">
-                <div class="span6">
-                    <p class="topcontact"><i class="icon-phone"></i> +62 088 999 123</p>
-                </div>
-                <div class="span6">
-
-                    <ul class="social-network">
-                        <li><a href="#" data-placement="bottom" title="Facebook"><i
-                                    class="icon-facebook icon-white"></i></a></li>
-                        <li><a href="#" data-placement="bottom" title="Twitter"><i
-                                    class="icon-twitter icon-white"></i></a></li>
-                        <li><a href="#" data-placement="bottom" title="Linkedin"><i
-                                    class="icon-linkedin icon-white"></i></a></li>
-                        <li><a href="#" data-placement="bottom" title="Pinterest"><i
-                                    class="icon-pinterest  icon-white"></i></a></li>
-                        <li><a href="#" data-placement="bottom" title="Google +"><i
-                                    class="icon-google-plus icon-white"></i></a></li>
-                        <li><a href="#" data-placement="bottom" title="Dribbble"><i
-                                    class="icon-dribbble icon-white"></i></a></li>
-                    </ul>
-
-                </div>
-            </div>
         </div>
     </div>
+    
     <div class="container">
 
 
@@ -51,35 +29,35 @@
                         <nav>
                             <ul class="nav topnav">
                                 <li>
-                                    <a href="contact.html">Beranda </a>
+                                    <a href="/beranda">Beranda </a>
                                 </li>
                                 <li class="dropdown">
                                     <a href="#">Pemerintah Desa<i class="icon-angle-down"></i></a>
                                     <ul class="dropdown-menu">
-                                        <li><a href="typography.html">Visi dan Misi</a></li>
-                                        <li><a href="components.html">Pemerintah Desa</a></li>
+                                        <li><a href="visimisi">Visi dan Misi</a></li>
+                                        <li><a href="struktur">Pemerintah Desa</a></li>
                                     </ul>
                                 </li>
                                 <li class="dropdown">
                                     <a href="#">Profil Desa <i class="icon-angle-down"></i></a>
                                     <ul class="dropdown-menu">
-                                        <li><a href="about.html">Profil Wilayah Desa</a></li>
-                                        <li><a href="faq.html">Sejarah Desa</a></li>
-                                        <li><a href="team.html">Status IDM 2023</a></li>
+                                        <li><a href="/profil">Profil Wilayah Desa</a></li>
+                                        <li><a href="/sejarah">Sejarah Desa</a></li>
+                                        <li><a href="/status-idm">Status IDM 2023</a></li>
                                     </ul>
                                 </li>
                                 <li class="dropdown">
                                     <a href="#">Regulasi<i class="icon-angle-down"></i></a>
                                     <ul class="dropdown-menu">
-                                        <li><a href="portfolio-2cols.html">Produk Hukum</a></li>
-                                        <li><a href="portfolio-3cols.html">Informasi Publik</a></li>
+                                        <li><a href="/produk-hukum">Produk Hukum</a></li>
+                                        <li><a href="/informasi-publik">Informasi Publik</a></li>
                                     </ul>
                                 </li>
                                 <li>
-                                    <a href="contact.html">Peta </a>
+                                    <a href="/peta">Peta </a>
                                 </li>
                                 <li>
-                                    <a href="contact.html">Lapak Desa </a>
+                                    <a href="/lapakdesa">Lapak Desa </a>
                                 </li>
                             </ul>
                         </nav>

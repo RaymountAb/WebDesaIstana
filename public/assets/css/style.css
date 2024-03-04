@@ -2785,4 +2785,35 @@ ul.the-icons {
   margin-top: 0; /* Mengurangi margin atas antara Desa Istana dan Kabupaten Ketapang */
 }
 
+#clock {
+  font-family: 'Arial Black', sans-serif;
+  font-size: 30px;
+  color: #333;
+  text-align: center;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 200px;
+  margin: 0 auto;
+}
+
+#clock > div {
+  margin-bottom: 10px; /* Tambahkan jarak antara waktu dan hari/tanggal */
+}
+
+.chart-legend {
+  text-align: center;
+}
+.legend-item {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.lapak-img {
+  width: 100%;
+  height: auto;
+}
+
+
 /* Theme Styler :: End */

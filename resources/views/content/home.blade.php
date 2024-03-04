@@ -107,6 +107,11 @@
                         </div>
 
                         <div class="widget">
+                            <h5 class="widgetheading" style="text-align: left;"><i class="fas fa-clock"></i>Waktu</h5>
+                            <div id="clock"></div>
+                        </div>
+
+                        <div class="widget">
 
                             <h5 class="widgetheading"><i class="fas fa-list"></i> Categories</h5>
 
@@ -120,23 +125,17 @@
                                 <li><i class="icon-angle-right"></i> <a href="#">Tentang Desa</a><span> (12)</span>
                                 </li>
                             </ul>
-                        </div>
+                        </div>               
 
                         <div class="widget">
-                            <h5 class="widgetheading"><i class="fas fa-video"></i> Video widget</h5>
-                            <div class="video-container">
-                                <iframe src="http://player.vimeo.com/video/30585464?title=0&amp;byline=0"> </iframe>
+                            <h5 class="widgetheading"><i class="fas fa-chart-pie"></i> Statistik Penduduk Desa</h5>
+                            <canvas id="populationChart" width="150" height="150"></canvas>
+                            <div class="chart-legend">
+                                <span class="legend-item"><span class="legend-color" style="background-color: rgba(255, 99, 132, 0.5);"></span>Laki-laki</span>
+                                <span class="legend-item"><span class="legend-color" style="background-color: rgba(54, 162, 235, 0.5);"></span>Perempuan</span>
                             </div>
-                        </div>                        
-
-                        <div class="widget">
-
-                            <h5 class="widgetheading">Text widget</h5>
-                            <p>
-                                Lorem ipsum dolor sit amet, quo everti torquatos rationibus an, graeci splendide mel cu. Sed
-                                ad vidisse eruditi maluisset, et duo mazim placerat adipiscing.
-                            </p>
                         </div>
+                                            
 
                         <div class="widget">
                             <h5 class="widgetheading" style="text-align: left;"><i class="fas fa-user-circle"></i>Masuk</h5>
@@ -151,4 +150,72 @@
             </div>
         </div>
     </section>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+    var ctx = document.getElementById('populationChart').getContext('2d');
+    var myChart = new Chart(ctx, {
+        type: 'pie',
+        data: {
+            labels: ['Laki-laki', 'Perempuan'],
+            datasets: [{
+                data: [500, 450], // Ganti dengan data jumlah penduduk laki-laki dan perempuan
+                backgroundColor: [
+                    'rgba(255, 99, 132, 0.5)', // Warna untuk laki-laki
+                    'rgba(54, 162, 235, 0.5)' // Warna untuk perempuan
+                ],
+                borderColor: [
+                    'rgba(255, 99, 132, 1)',
+                    'rgba(54, 162, 235, 1)'
+                ],
+                borderWidth: 1
+            }]
+        },
+        options: {
+            legend: {
+                display: false // Sembunyikan legenda bawaan
+            }
+        }
+    });
+
+    // Tambahkan penjelasan warna
+    var legendItems = document.querySelectorAll('.legend-item');
+    legendItems.forEach(function(item, index) {
+        item.innerHTML += ' (' + myChart.data.datasets[0].data[index] + ')';
+    });
+</script>
+
+    <script>
+        function updateClock() {
+            var now = new Date();
+            var clock = document.getElementById('clock');
+            var days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+            var day = days[now.getDay()];
+            var date = now.getDate();
+            var month = now.getMonth() + 1;
+            var year = now.getFullYear();
+            var hours = now.getHours();
+            var minutes = now.getMinutes();
+            var seconds = now.getSeconds();
+    
+            // Format waktu, tambahkan angka 0 di depan jika angka kurang dari 10
+            var timeString = pad(hours) + ':' + pad(minutes) + ':' + pad(seconds);
+    
+            // Format hari dan tanggal
+            var dateString = day + '<br>' + date + '/' + month + '/' + year;
+    
+            // Tampilkan waktu, hari, dan tanggal dalam elemen HTML
+            clock.innerHTML = timeString + '<br>' + dateString;
+        }
+    
+        function pad(number) {
+            return (number < 10 ? '0' : '') + number;
+        }
+    
+        updateClock(); // Panggil fungsi updateClock untuk pertama kali
+    
+        // Perbarui waktu setiap detik
+        setInterval(updateClock, 1000);
+    </script>
+    
+    
 @endsection

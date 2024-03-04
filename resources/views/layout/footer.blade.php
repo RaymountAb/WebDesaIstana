@@ -3,44 +3,29 @@
       <div class="row">
         <div class="span4">
           <div class="widget">
-            <h5 class="widgetheading">Browse pages</h5>
+            <h5 class="widgetheading">Tentang Desa</h5>
             <ul class="link-list">
-              <li><a href="#">Our company</a></li>
-              <li><a href="#">Terms and conditions</a></li>
-              <li><a href="#">Privacy policy</a></li>
-              <li><a href="#">Press release</a></li>
-              <li><a href="#">What we have done</a></li>
-              <li><a href="#">Our support forum</a></li>
+              <li><a href="#">Profil Desa</a></li>
+              <li><a href="#">Sejarah</a></li>
+              <li><a href="#">Visi Misi</a></li>
+              <li><a href="#">Peta</a></li>
+              <li><a href="#">Lapak Desa</a></li>
             </ul>
 
           </div>
         </div>
         <div class="span4">
           <div class="widget">
-            <h5 class="widgetheading">Get in touch</h5>
+            <h5 class="widgetheading">Desa Istana</h5>
             <address>
-                          <strong>Eterna company Inc.</strong><br>
-                          Somestreet 200 VW, Suite Village A.001<br>
-                          Jakarta 13426 Indonesia
+                          <strong>Kec. Sandai, Kabupaten Ketapang, Kalimantan Barat</strong><br>
+                          QGCJ+JP6, Jl. Istana, Sandai Kiri, Kec. Sandai, Kabupaten Ketapang<br>
+                          Kalimantan Barat 78871 Indonesia
                       </address>
             <p>
               <i class="icon-phone"></i> (123) 456-7890 - (123) 555-7891 <br>
               <i class="icon-envelope-alt"></i> email@domainname.com
             </p>
-          </div>
-        </div>
-        <div class="span4">
-          <div class="widget">
-            <h5 class="widgetheading">Subscribe newsletter</h5>
-            <p>
-              Keep updated for new releases and freebies. Enter your e-mail and subscribe to our newsletter.
-            </p>
-            <form class="subscribe">
-              <div class="input-append">
-                <input class="span2" id="appendedInputButton" type="text">
-                <button class="btn btn-theme" type="submit">Subscribe</button>
-              </div>
-            </form>
           </div>
         </div>
       </div>

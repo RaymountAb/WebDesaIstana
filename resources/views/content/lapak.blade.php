@@ -21,11 +21,9 @@
                     <div class="row">
                         <section id="team">
                             <ul id="thumbs" class="team">
-
-                                <!-- Item Project and Filter Name -->
                                 <li class="item-thumbs span3 design" data-id="id-0" data-type="design">
                                     <div class="team-box thumbnail">
-                                        <img src="assets/img/dummies/team/1.jpg" alt="" />
+                                        <img src="assets/img/lapak/lapak1.jpg" alt="" class="lapak-img" />
                                         <div class="caption">
                                             <h3>Kerupuk Ikan</h3>
                                             <h5>Rp. 15.000</h5>
@@ -39,7 +37,22 @@
                                         </div>
                                     </div>
                                 </li>
-                                <!-- End Item Project -->
+                                <li class="item-thumbs span3 design" data-id="id-0" data-type="design">
+                                    <div class="team-box thumbnail">
+                                        <img src="assets/img/lapak/lapak2.jpg" alt="" class="lapak-img" />
+                                        <div class="caption">
+                                            <h3>Dodol Lidah Buaya</h3>
+                                            <h5>Rp. 35.000</h5>
+                                            <p>
+                                                Dodol terbuat dari lidah buaya. rasa manis dan segar
+                                            </p>
+                                            <div class="btn-group">
+                                                <button class="btn btn-primary"><i class="fas fa-shopping-cart"></i> Pesan</button>
+                                                <button class="btn btn-success"><i class="fas fa-map-marker"></i> Lokasi</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>                                
                             </ul>
                         </section>
 
