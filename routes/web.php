@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AdminController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PageController;
 
@@ -27,5 +28,8 @@ Route::get('sejarah', [PageController::class, 'sejarah']);
 Route::get('status-idm', [PageController::class, 'status']);
 Route::get('produk-hukum', [PageController::class, 'prodhuk']);
 Route::get('informasi-publik', [PageController::class, 'inpub']);
+Route::get('login-admin', [PageController::class, 'login']);
+Route::get('admin/dashboard', [AdminController::class, 'dashboard']);
+
 
 

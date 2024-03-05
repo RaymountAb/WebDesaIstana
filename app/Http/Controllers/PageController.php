@@ -55,4 +55,9 @@ class PageController extends Controller
     {
         return view('content.informasi-publik');
     }
+
+    public function login()
+    {
+        return view('admin.layout.login');
+    }
 }

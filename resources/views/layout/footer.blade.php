@@ -5,11 +5,11 @@
           <div class="widget">
             <h5 class="widgetheading">Tentang Desa</h5>
             <ul class="link-list">
-              <li><a href="#">Profil Desa</a></li>
-              <li><a href="#">Sejarah</a></li>
-              <li><a href="#">Visi Misi</a></li>
-              <li><a href="#">Peta</a></li>
-              <li><a href="#">Lapak Desa</a></li>
+              <li><a href="/profil">Profil Desa</a></li>
+              <li><a href="/sejarah">Sejarah</a></li>
+              <li><a href="/visimisi">Visi Misi</a></li>
+              <li><a href="/peta">Peta</a></li>
+              <li><a href="/lapakdesa">Lapak Desa</a></li>
             </ul>
 
           </div>
