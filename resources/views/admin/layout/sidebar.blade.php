@@ -2,8 +2,8 @@
     <!-- Sidebar Profile Start -->
     <div class="sidebar--profile">
         <div class="profile--img">
-            <a href="profile.html">
-                <img src="assets/img/avatars/01_80x80.png" alt="" class="rounded-circle">
+            <a href="#">
+                <img src="assets/admin/assets/img/admin_icon.png" alt="" class="rounded-circle">
             </a>
         </div>
 
@@ -12,19 +12,13 @@
         </div>
 
         <div class="profile--nav">
-            <ul class="nav">
-                <li class="nav-item">
-                    <a href="profile.html" class="nav-link" title="User Profile">
-                        <i class="fa fa-user"></i>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link" title="Logout">
-                        <i class="fa fa-sign-out-alt"></i>
-                    </a>
-                </li>
-            </ul>
-        </div>
+            <form method="POST" action="{{ route('logout') }}">
+                @csrf
+                <button type="submit" class="nav-link" title="Logout">
+                    <i class="fa fa-sign-out-alt"></i>
+                </button>
+            </form>
+        </div>        
     </div>
     <!-- Sidebar Profile End -->
 

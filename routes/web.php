@@ -34,6 +34,7 @@ Route::get('informasi-publik', [PageController::class, 'inpub']);
 Route::middleware('auth')->group(function () {
     Route::get('admin/dashboard', [AdminController::class,'dashboard']);
     Route::resource('admin/konten', KontenController::class);
+    Route::post('/logout', [LoginController::class, 'logout'])->name('logout');
 });
 
 Route::middleware('guest')->group(function () {
