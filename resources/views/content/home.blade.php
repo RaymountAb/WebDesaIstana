@@ -25,29 +25,76 @@
                             <div class="span8">
                                 <div class="post-image">
                                     <div class="post-heading">
-                                        <h3><a href="#">This is an example of standard post format</a></h3>
+                                        <h3><a href="#">Judul Berita Desa</a></h3>
                                     </div>
 
-                                    <img src="assets/img/dummies/blog/img1.jpg" alt="" />
+                                    <img src="assets/img/post/post1.jpg" alt="" />
                                 </div>
                                 <div class="meta-post">
                                     <ul>
                                         <li><i class="icon-file"></i></li>
                                         <li>By <a href="#" class="author">Admin</a></li>
                                         <li>On <a href="#" class="date">10 Jun, 2013</a></li>
-                                        <li>Tags: <a href="#">Design</a>, <a href="#">Blog</a></li>
                                     </ul>
                                 </div>
                                 <div class="post-entry">
                                     <p>
-                                        Qui ut ceteros comprehensam. Cu eos sale sanctus eligendi, id ius elitr saperet,
-                                        ocurreret pertinacia pri an. No mei nibh consectetuer, semper laoreet perfecto ad
-                                        qui, est rebum nulla argumentum ei. Fierent adipisci iracundia est ei, usu timeam
-                                        persius
-                                        ea. Usu ea justo malis, pri quando everti electram ei, ex homero omittam
-                                        salutatus...
+                                        ini merupakan penjelasan berita tentang desa istana yang terbaru
                                     </p>
-                                    <a href="#" class="readmore">Read more <i class="icon-angle-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article>
+                        <div class="row">
+
+                            <div class="span8">
+                                <div class="post-image">
+                                    <div class="post-heading">
+                                        <h3><a href="#">Judul Berita Desa</a></h3>
+                                    </div>
+
+                                    <img src="assets/img/post/post2.jpg" alt="" />
+                                </div>
+                                <div class="meta-post">
+                                    <ul>
+                                        <li><i class="icon-file"></i></li>
+                                        <li>By <a href="#" class="author">Admin</a></li>
+                                        <li>On <a href="#" class="date">10 Jun, 2013</a></li>
+                                    </ul>
+                                </div>
+                                <div class="post-entry">
+                                    <p>
+                                        ini merupakan penjelasan berita tentang desa istana yang terbaru
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article>
+                        <div class="row">
+
+                            <div class="span8">
+                                <div class="post-image">
+                                    <div class="post-heading">
+                                        <h3><a href="#">Judul Berita Desa</a></h3>
+                                    </div>
+
+                                    <img src="assets/img/post/post3.jpg" alt="" />
+                                </div>
+                                <div class="meta-post">
+                                    <ul>
+                                        <li><i class="icon-file"></i></li>
+                                        <li>By <a href="#" class="author">Admin</a></li>
+                                        <li>On <a href="#" class="date">10 Jun, 2013</a></li>
+                                    </ul>
+                                </div>
+                                <div class="post-entry">
+                                    <p>
+                                        ini merupakan penjelasan berita tentang desa istana yang terbaru
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -58,37 +105,15 @@
                             <div class="span8">
                                 <div class="post-video">
                                     <div class="post-heading">
-                                        <h3><a href="#">Amazing video post format here</a></h3>
+                                        <h3><a href="#">Video Profil Desa Istana</a></h3>
                                     </div>
                                     <div class="video-container">
                                         <iframe width="560" height="315" src="https://www.youtube.com/embed/9r0YjRlZv2A" frameborder="0" allowfullscreen></iframe>
                                     </div>
                                 </div>
-                                <div class="meta-post">
-                                    <ul>
-                                        <li><i class="icon-facetime-video"></i></li>
-                                        <li>By <a href="#" class="author">Admin</a></li>
-                                        <li>On <a href="#" class="date">10 Jun, 2013</a></li>
-                                        <li>Tags: <a href="#">Design</a>, <a href="#">Blog</a></li>
-                                    </ul>
-                                </div>
-                                <div class="post-entry">
-                                    <p>
-                                        Qui ut ceteros comprehensam. Cu eos sale sanctus eligendi, id ius elitr saperet, ocurreret pertinacia pri an. No mei nibh consectetuer, semper laoreet perfecto ad qui, est rebum nulla argumentum ei. Fierent adipisci iracundia est ei, usu timeam persius
-                                        ea. Usu ea justo malis, pri quando everti electram ei, ex homero omittam salutatus...
-                                    </p>
-                                    <a href="#" class="readmore">Read more <i class="icon-angle-right"></i></a>
-                                </div>
                             </div>
                         </div>
                     </article>                    
-
-                    <div id="pagination">
-                        <span class="all">Page 1 of 3</span>
-                        <span class="current">1</span>
-                        <a href="#" class="inactive">2</a>
-                        <a href="#" class="inactive">3</a>
-                    </div>
                 </div>
 
                 <div class="span4">
@@ -128,10 +153,10 @@
 
                         <div class="widget">
                             <h5 class="widgetheading"><i class="fas fa-chart-pie"></i> Statistik Penduduk Desa</h5>
-                            <canvas id="populationChart" width="150" height="150"></canvas>
+                            <canvas id="populationChart" width="50" height="50"></canvas>
                             <div class="chart-legend">
-                                <span class="legend-item"><span class="legend-color" style="background-color: rgba(255, 99, 132, 0.5);"></span>Laki-laki</span>
-                                <span class="legend-item"><span class="legend-color" style="background-color: rgba(54, 162, 235, 0.5);"></span>Perempuan</span>
+                                <span class="legend-item"><span class="legend-color" style="background-color: rgba(255, 99, 132, 0.5);"></span>Perempuan</span>
+                                <span class="legend-item"><span class="legend-color" style="background-color: rgba(54, 162, 235, 0.5);"></span>Laki-laki</span>
                             </div>
                         </div>
                                             
@@ -157,10 +182,10 @@
         data: {
             labels: ['Laki-laki', 'Perempuan'],
             datasets: [{
-                data: [500, 450], // Ganti dengan data jumlah penduduk laki-laki dan perempuan
+                data: [178, 218], // Ganti dengan data jumlah penduduk laki-laki dan perempuan
                 backgroundColor: [
-                    'rgba(255, 99, 132, 0.5)', // Warna untuk laki-laki
-                    'rgba(54, 162, 235, 0.5)' // Warna untuk perempuan
+                    'rgba(255, 99, 132, 0.5)', // Warna untuk laki-laki 
+                    'rgba(54, 162, 235, 0.5)',  // Warna untuk perempuan
                 ],
                 borderColor: [
                     'rgba(255, 99, 132, 1)',
