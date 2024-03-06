@@ -139,7 +139,7 @@
                         <div class="widget">
                             <h5 class="widgetheading" style="text-align: left;"><i class="fas fa-user-circle"></i>Masuk</h5>
                             <div style="text-align: center;">
-                                <a href="your link" class="btn btn-primary" style="margin-bottom: 5px;"><i class="fas fa-id-badge "></i> Admin</a><br>
+                                <a href="/login-admin" class="btn btn-primary" style="margin-bottom: 5px;"><i class="fas fa-id-badge "></i> Admin</a><br>
                                 <a href="your link" class="btn btn-success btn-rounded" style="margin-top: 5px;"><i class="fas fa-handshake"></i>Layanan Mandiri</a>
                             </div>
                         </div>                                                                                       

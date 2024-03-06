@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html dir="ltr" lang="en" class="no-outlines">
+
 <head>
-    
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- ==== Document Title ==== -->
     <title>Login Admin</title>
-    
+
     <!-- ==== Document Meta ==== -->
     <meta name="author" content="">
     <meta name="description" content="">
@@ -18,7 +19,8 @@
     <link rel="icon" href="favicon.png" type="image/png">
 
     <!-- ==== Google Font ==== -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700%7CMontserrat:400,500">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700%7CMontserrat:400,500">
 
     <!-- Stylesheets -->
     <link rel="stylesheet" href="assets/admin/assets/css/bootstrap.min.css">
@@ -40,17 +42,24 @@
     <!-- Page Level Stylesheets -->
 
 </head>
+
 <body>
 
     <!-- Wrapper Start -->
     <div class="wrapper">
+
+        @if (session()->has('loginError'))
+            <div class="alert alert-danger alert-dismissable fade show" role="alert">
+                {{ session('loginError') }}
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+        @endif
         <!-- Login Page Start -->
         <div class="m-account-w" data-bg-img="assets/admin/assets/img/bg_login.png">
             <div class="m-account">
                 <div class="row no-gutters">
                     <div class="col-md-6">
                     </div>
-
                     <div class="col-md-6">
                         <!-- Login Form Start -->
                         <div class="m-account--form-w">
@@ -61,16 +70,17 @@
                                 </div>
                                 <!-- Logo End -->
 
-                                <form action="#" method="post">
+                                <form action="login" method="POST">
                                     <label class="m-account--title">Login Admin</label>
-
+                                    @csrf
                                     <div class="form-group">
                                         <div class="input-group">
                                             <div class="input-group-prepend">
                                                 <i class="fas fa-user"></i>
                                             </div>
 
-                                            <input type="text" name="username" placeholder="Username" class="form-control" autocomplete="off" required>
+                                            <input type="text" name="name" placeholder="Username"
+                                                class="form-control" autocomplete="off" required>
                                         </div>
                                     </div>
 
@@ -80,7 +90,8 @@
                                                 <i class="fas fa-key"></i>
                                             </div>
 
-                                            <input type="password" name="password" placeholder="Password" class="form-control" autocomplete="off" required>
+                                            <input type="password" name="password" placeholder="Password"
+                                                class="form-control" autocomplete="off" required>
                                         </div>
                                     </div>
                                     <div class="m-account--actions">
@@ -123,4 +134,5 @@
     <!-- Page Level Scripts -->
 
 </body>
+
 </html>

@@ -1,8 +1,10 @@
 <?php
 
-use App\Http\Controllers\AdminController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PageController;
+use App\Http\Controllers\AdminController;
+use App\Http\Controllers\KontenController;
+use App\Http\Controllers\LoginController;
 
 /*
 |--------------------------------------------------------------------------
@@ -28,8 +30,15 @@ Route::get('sejarah', [PageController::class, 'sejarah']);
 Route::get('status-idm', [PageController::class, 'status']);
 Route::get('produk-hukum', [PageController::class, 'prodhuk']);
 Route::get('informasi-publik', [PageController::class, 'inpub']);
-Route::get('login-admin', [PageController::class, 'login']);
-Route::get('admin/dashboard', [AdminController::class, 'dashboard']);
 
+Route::middleware('auth')->group(function () {
+    Route::get('admin/dashboard', [AdminController::class,'dashboard']);
+    Route::resource('admin/konten', KontenController::class);
+});
+
+Route::middleware('guest')->group(function () {
+    Route::get('login-admin',[LoginController::class,'login']);
+    Route::post('login',[LoginController::class,'authenticate']);
+});
 
 
