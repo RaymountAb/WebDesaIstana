@@ -46,11 +46,21 @@
                                         <li><a href="/status-idm">Status IDM 2023</a></li>
                                     </ul>
                                 </li>
-                                <li class="dropdown">
+                                {{-- <li class="dropdown">
                                     <a href="#">Regulasi<i class="icon-angle-down"></i></a>
                                     <ul class="dropdown-menu">
                                         <li><a href="/produk-hukum">Produk Hukum</a></li>
                                         <li><a href="/informasi-publik">Informasi Publik</a></li>
+                                    </ul>
+                                </li> --}}
+                                <li class="dropdown">
+                                    <a href="#">Organisasi Desa<i class="icon-angle-down"></i></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">PKK</a></li>
+                                        <li><a href="#">Karang Taruna</a></li>
+                                        <li><a href="#">BumDes</a></li>
+                                        <li><a href="#">Posyandu</a></li>
+                                        <li><a href="#">BPD Desa Istana</a></li>
                                     </ul>
                                 </li>
                                 <li>

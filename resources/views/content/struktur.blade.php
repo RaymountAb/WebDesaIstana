@@ -6,7 +6,7 @@
             <div class="row">
                 <div class="span12">
                     <div class="inner-heading">
-                        <h2>Struktur Pemerintahan Desa</h2>
+                        <h2>Pemerintahan Desa</h2>
                     </div>
                 </div>
             </div>
@@ -19,7 +19,12 @@
                 <div class="span12">
                     <div class="clearfix"></div>
                     <div class="row">
-                        <img src="assets/img/strukturdesa.png" alt="" />
+                        <h4 class="title" align="center"><strong>Struktur Perangkat Desa</strong></h4>
+                        <img src="assets/img/sotkdesa.png" alt="" />
+                    </div>
+                    <div class="row">
+                        <h4 class="title" align="center"><strong>Struktur Karang Taruna Desa</strong></h4>
+                        <img src="assets/img/sotkkarangtaruna.png" alt="" />
                     </div>
                 </div>
             </div>

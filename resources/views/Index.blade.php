@@ -58,7 +58,7 @@
   <script src="assets/js/jquery.prettyPhoto.js"></script>
   <script src="assets/js/portfolio/jquery.quicksand.js"></script>
   <script src="assets/js/portfolio/setting.js"></script>
-
+  <script src="https://code.highcharts.com/highcharts.js"></script>
   <script src="assets/js/jquery.flexslider.js"></script>
   <script src="assets/js/animate.js"></script>
   <script src="assets/js/inview.js"></script>

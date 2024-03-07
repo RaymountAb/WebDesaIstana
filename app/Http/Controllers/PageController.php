@@ -43,7 +43,12 @@ class PageController extends Controller
 
     public function status()
     {
-        return view('content.status-idm');
+        $data = [
+            'IKS' => 0.806,
+            'IKE' => 0.8,
+            'IKL' => 0.867
+        ];
+        return view('content.status-idm', compact('data'));
     }
 
     public function prodhuk()
