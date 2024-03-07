@@ -19,12 +19,12 @@
             <h5 class="widgetheading">Desa Istana</h5>
             <address>
                           <strong>Kec. Sandai, Kabupaten Ketapang, Kalimantan Barat</strong><br>
-                          QGCJ+JP6, Jl. Istana, Sandai Kiri, Kec. Sandai, Kabupaten Ketapang<br>
+                          Kantor Desa: Jl. Trans Kalimantan Kompleks Lapangan Bola Nomor 20, Desa Istana, Kec. Sandai, Kabupaten Ketapang<br>
                           Kalimantan Barat 78871 Indonesia
                       </address>
             <p>
               <i class="icon-phone"></i> (123) 456-7890 - (123) 555-7891 <br>
-              <i class="icon-envelope-alt"></i> email@domainname.com
+              <i class="icon-envelope-alt"></i> desaistana@gmail.com
             </p>
           </div>
         </div>
