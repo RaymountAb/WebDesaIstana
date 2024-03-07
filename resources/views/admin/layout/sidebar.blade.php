@@ -28,13 +28,13 @@
             <li>
                 <ul>
                     <li class="active">
-                        <a href="index.html">
+                        <a href="admin/dashboard">
                             <i class="fa fa-home"></i>
                             <span>Dashboard</span>
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="admin/konten">
                             <i class="fa fa-book"></i>
                             <span>Konten Desa</span>
                         </a>
@@ -47,7 +47,7 @@
                     </li>
                     <li>
                         <a href="#">
-                            <i class="fa fa-bar-chart"></i>
+                            <i class="fa fa-signal"></i>
                             <span>Statistik Desa</span>
                         </a>
                     </li>
