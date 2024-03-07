@@ -28,13 +28,13 @@
             <li>
                 <ul>
                     <li class="active">
-                        <a href="admin/dashboard">
+                        <a href="dashboard">
                             <i class="fa fa-home"></i>
                             <span>Dashboard</span>
                         </a>
                     </li>
                     <li>
-                        <a href="admin/konten">
+                        <a href="konten">
                             <i class="fa fa-book"></i>
                             <span>Konten Desa</span>
                         </a>
