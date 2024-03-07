@@ -21,18 +21,16 @@
                         <tr>
                             <td>
                                 <h4 class="title" align="center"><strong>Visi</strong></h4>
-                                <p><strong>“DENGAN SEMANGAT PERSAUDARAAN, GOTONG ROYONG DAN AKHLAK MULIA GUNA MEWUJUDKAN DESA LANGKAP YANG LUAR BIASA”.</strong></p>
+                                <p align="center"><strong>“Terwujudnya masyarakat yang Mandiri, Aman, Tertib, Berkeadilan Dan Peduli.”</strong></p>
                             </td>
                         </tr>
                         <tr>
                             <td>
                                 <h4 class="title" align="center"><strong>Misi</strong></h4>
                                 <ol>
-                                    <li>PENYELENGGARAAN PEMERINTAHAN DESA YANG TRANSPARAN DAN AKUNTABEL SERTA PENINGKATAN KUALITAS DAN AKSES TERHADAP PELAYANAN DASAR</li>
-                                    <li>PEMBANGUNAN DAN PEMELIHARAAN INFRASTRUKTUR DAN LINGKUNGAN BERDASARKAN KEMAMPUAN TEKNIS DAN SUMBER DAYA LOKAL YANG TERSEDIA</li>
-                                    <li>PENGEMBANGAN EKONOMI PERTANIAN BERSKALA PRODUKTIF.</li>
-                                    <li>MENUMBUHKEMBANGKAN KELOMPOK-KELOMPOK USAHA MELALUI BUMDES DAN PEMANFAATAN TEKNOLIGI TEPAT GUNA UNTUK KEMAJUAN EKONOMI</li>
-                                    <li>PENINGKATKAN KEMAMPUAN SDM YANG UNGGUL, BERIMAN DAN BERTAQWA.</li>
+                                    <li>Terwujudnya masyarakat yang Mandiri, Aman, Tertib, Berkeadilan Dan Peduli.</li>
+                                    <li>Memaksimalkan usaha-usaha milik desa yang professional demi meningkatkan PAD Desa yang berkesinambungan.</li>
+                                    <li>Mendorong kegiatan-kegiatan Keagamaan, Pendidikan, Kesehatan, Seni Budaya, dan Olah Raga Secara Maksimal.</li>
                                 </ol>
                             </td>
                         </tr>
