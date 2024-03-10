@@ -51,13 +51,38 @@ class PageController extends Controller
         return view('content.status-idm', compact('data'));
     }
 
-    public function prodhuk()
+    // public function prodhuk()
+    // {
+    //     return view('content.produk-hukum');
+    // }
+
+    // public function inpub()
+    // {
+    //     return view('content.informasi-publik');
+    // }
+
+    public function taruna()
     {
-        return view('content.produk-hukum');
+        return view('content.karangtaruna');
     }
 
-    public function inpub()
+    public function pkk()
     {
-        return view('content.informasi-publik');
+        return view('content.pkk');
+    }
+
+    public function posyandu()
+    {
+        return view('content.posyandu');
+    }
+
+    public function bpddesa()
+    {
+        return view('content.bpd');
+    }
+
+    public function bumdes()
+    {
+        return view('content.bumdes');
     }
 }

@@ -10,13 +10,13 @@
 
   <!-- css -->
   <link href="https://fonts.googleapis.com/css?family=Handlee|Open+Sans:300,400,600,700,800" rel="stylesheet">
-  <link href="assets/css/bootstrap.css" rel="stylesheet" />
-  <link href="assets/css/bootstrap-responsive.css" rel="stylesheet" />
-  <link href="assets/css/flexslider.css" rel="stylesheet" />
-  <link href="assets/css/prettyPhoto.css" rel="stylesheet" />
-  <link href="assets/css/camera.css" rel="stylesheet" />
-  <link href="assets/css/jquery.bxslider.css" rel="stylesheet" />
-  <link href="assets/css/style.css" rel="stylesheet" />
+  <link href="{{ asset('assets/css/bootstrap.css') }}" rel="stylesheet" />
+  <link href="{{ asset('assets/css/bootstrap-responsive.css') }}" rel="stylesheet" />
+  <link href="{{ asset('assets/css/flexslider.css') }}" rel="stylesheet" />
+  <link href="{{ asset('assets/css/prettyPhoto.css') }}" rel="stylesheet" />
+  <link href="{{ asset('assets/css/camera.css') }}" rel="stylesheet" />
+  <link href="{{ asset('assets/css/jquery.bxslider.css') }}" rel="stylesheet" />
+  <link href="{{ asset('assets/css/style.css') }}" rel="stylesheet" />
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 
   <!-- Theme skin -->
@@ -44,27 +44,27 @@
   <!-- javascript
     ================================================== -->
   <!-- Placed at the end of the document so the pages load faster -->
-  <script src="assets/js/jquery.js"></script>
-  <script src="assets/js/jquery.easing.1.3.js"></script>
-  <script src="assets/js/bootstrap.js"></script>
+  <script src="{{ asset('assets/js/jquery.js') }}"></script>
+  <script src="{{ asset('assets/js/jquery.easing.1.3.js') }}"></script>
+  <script src="{{ asset('assets/js/bootstrap.js') }}"></script>
 
-  <script src="assets/js/modernizr.custom.js"></script>
-  <script src="assets/js/toucheffects.js"></script>
-  <script src="assets/js/google-code-prettify/prettify.js"></script>
-  <script src="assets/js/jquery.bxslider.min.js"></script>
-  <script src="assets/js/camera/camera.js"></script>
-  <script src="assets/js/camera/setting.js"></script>
+  <script src="{{ asset('assets/js/modernizr.custom.js') }}"></script>
+  <script src="{{ asset('assets/js/toucheffects.js') }}"></script>
+  <script src="{{ asset('assets/js/google-code-prettify/prettify.js') }}"></script>
+  <script src="{{ asset('assets/js/jquery.bxslider.min.js') }}"></script>
+  <script src="{{ asset('assets/js/camera/camera.js') }}"></script>
+  <script src="{{ asset('assets/js/camera/setting.js') }}"></script>
 
-  <script src="assets/js/jquery.prettyPhoto.js"></script>
-  <script src="assets/js/portfolio/jquery.quicksand.js"></script>
-  <script src="assets/js/portfolio/setting.js"></script>
+  <script src="{{ asset('assets/js/jquery.prettyPhoto.js') }}"></script>
+  <script src="{{ asset('assets/js/portfolio/jquery.quicksand.js') }}"></script>
+  <script src="{{ asset('assets/js/portfolio/setting.js') }}"></script>
   <script src="https://code.highcharts.com/highcharts.js"></script>
-  <script src="assets/js/jquery.flexslider.js"></script>
-  <script src="assets/js/animate.js"></script>
-  <script src="assets/js/inview.js"></script>
+  <script src="{{ asset('assets/js/jquery.flexslider.js') }}"></script>
+  <script src="{{ asset('assets/js/animate.js') }}"></script>
+  <script src="{{ asset('assets/js/inview.js') }}"></script>
 
   <!-- Template Custom JavaScript File -->
-  <script src="assets/js/custom.js"></script>
+  <script src="{{ asset('assets/js/custom.js') }}"></script>
 
 </body>
 </html>

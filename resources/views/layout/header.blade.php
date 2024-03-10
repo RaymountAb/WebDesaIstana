@@ -56,11 +56,11 @@
                                 <li class="dropdown">
                                     <a href="#">Organisasi Desa<i class="icon-angle-down"></i></a>
                                     <ul class="dropdown-menu">
-                                        <li><a href="#">PKK</a></li>
-                                        <li><a href="#">Karang Taruna</a></li>
-                                        <li><a href="#">BumDes</a></li>
-                                        <li><a href="#">Posyandu</a></li>
-                                        <li><a href="#">BPD Desa Istana</a></li>
+                                        <li><a href="/organisasi/pkk">PKK</a></li>
+                                        <li><a href="/organisasi/karangtaruna">Karang Taruna</a></li>
+                                        <li><a href="/organisasi/bumdes">BumDes</a></li>
+                                        <li><a href="/organisasi/posyandu">Posyandu</a></li>
+                                        <li><a href="/organisasi/bpddesa">BPD Desa Istana</a></li>
                                     </ul>
                                 </li>
                                 <li>

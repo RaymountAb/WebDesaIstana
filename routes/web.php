@@ -30,7 +30,11 @@ Route::get('sejarah', [PageController::class, 'sejarah']);
 Route::get('status-idm', [PageController::class, 'status']);
 Route::get('produk-hukum', [PageController::class, 'prodhuk']);
 Route::get('informasi-publik', [PageController::class, 'inpub']);
-
+Route::get('organisasi/karangtaruna', [PageController::class, 'taruna']);
+Route::get('organisasi/pkk', [PageController::class, 'pkk']);
+Route::get('organisasi/posyandu', [PageController::class, 'posyandu']);
+Route::get('organisasi/bpddesa', [PageController::class, 'bpddesa']);
+Route::get('organisasi/bumdes', [PageController::class, 'bumdes']);
 Route::middleware('auth')->group(function () {
     Route::get('admin/dashboard', [AdminController::class,'dashboard']);
     Route::resource('admin/konten', KontenController::class);
