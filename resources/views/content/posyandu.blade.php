@@ -19,8 +19,8 @@
                 <div class="span12">
                     <div class="clearfix"></div>
                     <div class="row">
-                        <h4 class="title" align="center"><strong>Struktur Posyandu</strong></h4>
-                        <img src="../assets/img/sotkkarangtaruna.png" alt="" />
+                        <h4 class="title" align="center"><strong>Struktur Posyandu Permata Bunda</strong></h4>
+                        <img src="../assets/img/sotkposyandu.png" alt="" />
                     </div>
                     <div class="row" align="center">
                         <h4 class="title" align="center"><strong>Daftar Anggota</strong></h4>

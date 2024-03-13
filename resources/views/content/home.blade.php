@@ -267,14 +267,16 @@
 
                         <div class="widget">
                             <h5 class="widgetheading"><i class="fas fa-chart-pie"></i> Statistik Penduduk Desa</h5>
-                            <canvas id="populationChart" width="50" height="50"></canvas>
-                            <div class="chart-legend">
-                                <span class="legend-item"><span class="legend-color"
-                                        style="background-color: rgba(255, 99, 132, 0.5);"></span>Perempuan</span>
-                                <span class="legend-item"><span class="legend-color"
-                                        style="background-color: rgba(54, 162, 235, 0.5);"></span>Laki-laki</span>
+                            <div id="chartpenduduk" style="width:100%; height:400px;"></div>
+                            <div style="display: flex; justify-content: space-between;">
+                                <div>
+                                    <p style="margin: 0;">laki-laki: <strong>1570</strong></p>
+                                </div>
+                                <div>
+                                    <p style="margin: 0;">perempuan: <strong>1392</strong></p>
+                                </div>
                             </div>
-                        </div>
+                        </div>                        
 
 
                         <div class="widget">
@@ -293,39 +295,56 @@
             </div>
         </div>
     </section>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
     <script>
-        var ctx = document.getElementById('populationChart').getContext('2d');
-        var myChart = new Chart(ctx, {
-            type: 'pie',
-            data: {
-                labels: ['Laki-laki', 'Perempuan'],
-                datasets: [{
-                    data: [178, 218], // Ganti dengan data jumlah penduduk laki-laki dan perempuan
-                    backgroundColor: [
-                        'rgba(255, 99, 132, 0.5)', // Warna untuk laki-laki 
-                        'rgba(54, 162, 235, 0.5)', // Warna untuk perempuan
-                    ],
-                    borderColor: [
-                        'rgba(255, 99, 132, 1)',
-                        'rgba(54, 162, 235, 1)'
-                    ],
-                    borderWidth: 1
-                }]
+        // Data jumlah penduduk laki-laki dan perempuan
+        var dataLakiLaki = [355, 400, 419, 396];
+        var dataPerempuan = [336, 358, 401, 297];
+    
+        // Menghitung total keseluruhan laki-laki dan perempuan
+        var totalLakiLaki = dataLakiLaki.reduce((a, b) => a + b, 0);
+        var totalPerempuan = dataPerempuan.reduce((a, b) => a + b, 0);
+    
+        // Inisialisasi Highcharts
+        Highcharts.chart('chartpenduduk', {
+            chart: {
+                type: 'column' // Jenis diagram: batang
             },
-            options: {
-                legend: {
-                    display: false // Sembunyikan legenda bawaan
+            title: {
+                text: 'Statistik Penduduk'
+            },
+            xAxis: {
+                categories: ['Kediuk', 'Tebing Tinggi', 'Taruna', 'Terap'], // Nama daerah
+                crosshair: true
+            },
+            yAxis: {
+                min: 0,
+                title: {
+                    text: 'Jumlah Penduduk'
                 }
+            },
+            series: [{
+                name: 'Laki-laki',
+                color: 'blue', // Warna biru
+                data: dataLakiLaki // Data jumlah penduduk laki-laki
+            }, {
+                name: 'Perempuan',
+                color: 'pink', // Warna pink
+                data: dataPerempuan // Data jumlah penduduk perempuan
+            }],
+            tooltip: {
+                headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+                pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+                    '<td style="padding:0"><b>{point.y}</b></td></tr>',
+                footerFormat: '</table>',
+                shared: true,
+                useHTML: true
             }
         });
-
-        // Tambahkan penjelasan warna
-        var legendItems = document.querySelectorAll('.legend-item');
-        legendItems.forEach(function(item, index) {
-            item.innerHTML += ' (' + myChart.data.datasets[0].data[index] + ')';
-        });
     </script>
+
+
+
 
     <script>
         function updateClock() {
