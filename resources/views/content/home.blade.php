@@ -188,7 +188,7 @@
                                         <h3><a href="#">PENYULUHAN PENTINGNYA ASI EKSKLUSIF</a></h3>
                                     </div>
 
-                                    <img src="assets/img/post/post5.png" alt="" />
+                                    <img src="assets/img/post/post6.png" alt="" />
                                 </div>
                                 <div class="meta-post">
                                     <ul>
