@@ -3,7 +3,7 @@
     <div class="sidebar--profile">
         <div class="profile--img">
             <a href="#">
-                <img src="assets/admin/assets/img/admin_icon.png" alt="" class="rounded-circle">
+                <img src="../assets/admin/assets/img/admin_icon.png" alt="" class="rounded-circle">
             </a>
         </div>
 
@@ -40,15 +40,15 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="lapak">
                             <i class="fa fa-shopping-cart"></i>
                             <span>Lapak Desa</span>
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="statpenduduk">
                             <i class="fa fa-signal"></i>
-                            <span>Statistik Desa</span>
+                            <span>Statistik Penduduk</span>
                         </a>
                     </li>
                 </ul>

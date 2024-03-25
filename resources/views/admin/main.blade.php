@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html dir="ltr" lang="en" class="no-outlines">
+
 <head>
 
     <meta charset="UTF-8">
@@ -7,39 +8,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- ==== Document Title ==== -->
-    <title>Dashboard - DAdmin</title>
-    
+    <title>Website Admin</title>
+
     <!-- ==== Document Meta ==== -->
     <meta name="author" content="">
     <meta name="description" content="">
     <meta name="keywords" content="">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <!-- ==== Favicon ==== -->
     <link rel="icon" href="favicon.png" type="image/png">
 
     <!-- ==== Google Font ==== -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700%7CMontserrat:400,500">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700%7CMontserrat:400,500">
 
     <!-- Stylesheets -->
     <link rel="stylesheet" href="{{ asset('assets/admin/assets/css/bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/admin/assets/css/fontawesome-all.min.css') }}">
-    <link rel="stylesheet" href="{{asset('assets/admin/assets/css/jquery-ui.min.css')}}">
-    <link rel="stylesheet" href="{{asset('assets/admin/assets/css/perfect-scrollbar.min.css') }}">
-    <link rel="stylesheet" href="{{asset('assets/admin/assets/css/morris.min.css') }}">
-    <link rel="stylesheet" href="{{asset('assets/admin/assets/css/select2.min.css') }}">
-    <link rel="stylesheet" href="{{asset('assets/admin/assets/css/jquery-jvectormap.min.css') }}">
-    <link rel="stylesheet" href="{{asset('assets/admin/assets/css/horizontal-timeline.min.css') }}">
-    <link rel="stylesheet" href="{{asset('assets/admin/assets/css/weather-icons.min.css') }}">
-    <link rel="stylesheet" href="{{asset('assets/admin/assets/css/dropzone.min.css') }}">
-    <link rel="stylesheet" href="{{asset('assets/admin/assets/css/ion.rangeSlider.min.css') }}">
-    <link rel="stylesheet" href="{{asset('assets/admin/assets/css/ion.rangeSlider.skinFlat.min.css') }}">
-    <link rel="stylesheet" href="{{asset('assets/admin/assets/css/datatables.min.css') }}">
-    <link rel="stylesheet" href="{{asset('assets/admin/assets/css/fullcalendar.min.css') }}">
-    <link rel="stylesheet" href="{{asset('assets/admin/assets/css/style.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/admin/assets/css/jquery-ui.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/admin/assets/css/perfect-scrollbar.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/admin/assets/css/morris.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/admin/assets/css/select2.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/admin/assets/css/jquery-jvectormap.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/admin/assets/css/horizontal-timeline.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/admin/assets/css/weather-icons.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/admin/assets/css/dropzone.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/admin/assets/css/ion.rangeSlider.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/admin/assets/css/ion.rangeSlider.skinFlat.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/admin/assets/css/datatables.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/admin/assets/css/fullcalendar.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/admin/assets/css/style.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/admin/assets/css/dataTables.dataTables.css') }}">
 
     <!-- Page Level Stylesheets -->
-    
+
 </head>
+
 <body>
 
     <!-- Wrapper Start -->
@@ -50,7 +55,7 @@
             <div class="navbar--header">
                 <!-- Logo Start -->
                 <a href="index.html" class="logo">
-                    <img src="assets/img/logo.png" alt="">
+                    <img src="../assets/admin/assets/img/logo.png" alt="">
                 </a>
                 <!-- Logo End -->
 
@@ -82,6 +87,7 @@
 
     <!-- Scripts -->
     <script src="{{ asset('assets/admin/assets/js/jquery.min.js') }}"></script>
+    <script src="{{ asset('assets/admin/assets/js/jquery.dataTables.min.js') }}"></script>
     <script src="{{ asset('assets/admin/assets/js/jquery-ui.min.js') }}"></script>
     <script src="{{ asset('assets/admin/assets/js/bootstrap.bundle.min.js') }}"></script>
     <script src="{{ asset('assets/admin/assets/js/perfect-scrollbar.min.js') }}"></script>
@@ -100,4 +106,5 @@
     <script src="{{ asset('assets/admin/assets/js/main.js') }}"></script>
 
 </body>
+
 </html>
