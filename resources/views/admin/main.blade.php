@@ -40,7 +40,8 @@
     <link rel="stylesheet" href="{{ asset('assets/admin/assets/css/fullcalendar.min.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/admin/assets/css/style.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/admin/assets/css/dataTables.dataTables.css') }}">
-
+    <script src="{{ asset('assets/admin/assets/js/jquery.min.js') }}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <!-- Page Level Stylesheets -->
 
 </head>

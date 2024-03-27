@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\StatPen;
-use Yajra\DataTables\Facades\DataTables;
+use Yajra\DataTables\DataTables;
 
 
 class PendudukController extends Controller
@@ -40,4 +40,22 @@ class PendudukController extends Controller
 
         return response()->json(['success' => 'Data berhasil diubah.']);
     }
+
+    public function edit($id)
+    {
+        $data = StatPen::find($id);
+        return response()->json($data);
+    }
+
+    public function update(Request $request)
+    {
+        $statPenduduk = StatPen::find($request->daerah_id);
+        $statPenduduk->update([
+            'lelaki' => $request->lelaki,
+            'perempuan' => $request->perempuan,
+        ]);
+
+        return response()->json(['success' => 'Data berhasil diubah.']);
+    }
+
 }
