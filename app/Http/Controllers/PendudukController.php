@@ -38,7 +38,7 @@ class PendudukController extends Controller
             'perempuan'=> $request->perempuan,
         ]);
 
-        return response()->json(['success' => 'Data berhasil diubah.']);
+        return response()->json(['success' => 'Data berhasil diambil.']);
     }
 
     public function edit($id)
