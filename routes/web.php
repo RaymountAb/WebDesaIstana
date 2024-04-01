@@ -6,6 +6,8 @@ use App\Http\Controllers\AdminController;
 use App\Http\Controllers\KontenController;
 use App\Http\Controllers\PendudukController;
 use App\Http\Controllers\LoginController;
+use App\Http\Controllers\OrganisasiController;
+use App\Http\Controllers\LapakController;
 
 /*
 |--------------------------------------------------------------------------
@@ -40,6 +42,8 @@ Route::middleware('auth')->group(function () {
     Route::get('admin/dashboard', [AdminController::class,'dashboard']);
     Route::resource('admin/konten', KontenController::class);
     Route::resource('admin/statpenduduk',PendudukController::class);
+    Route::resource('admin/organisasi',OrganisasiController::class);
+    Route::resource('admin/lapak',LapakController::class);
     Route::post('/logout', [LoginController::class, 'logout'])->name('logout');
 });
 

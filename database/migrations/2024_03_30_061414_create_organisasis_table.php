@@ -13,6 +13,9 @@ return new class extends Migration
     {
         Schema::create('organisasis', function (Blueprint $table) {
             $table->id();
+            $table->string('nama');
+            $table->string('sotk');
+            $table->string('anggota');
             $table->timestamps();
         });
     }

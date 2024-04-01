@@ -40,6 +40,12 @@
                         </a>
                     </li>
                     <li>
+                        <a href="organisasi">
+                            <i class="fa fa-book"></i>
+                            <span>Organisasi Desa</span>
+                        </a>
+                    </li>
+                    <li>
                         <a href="lapak">
                             <i class="fa fa-shopping-cart"></i>
                             <span>Lapak Desa</span>
