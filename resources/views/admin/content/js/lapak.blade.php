@@ -9,7 +9,7 @@
             info: false,
             order: false,
             paging: false,
-            ajax: "{{ route('konten.index') }}",
+            ajax: "{{ route('lapak.index') }}",
             columns: [{
                     data: 'DT_RowIndex',
                     name: 'DT_RowIndex',
@@ -44,12 +44,6 @@
                     searchable: false
                 },
                 {
-                    data: 'harga',
-                    name: 'harga',
-                    orderable: false,
-                    searchable: false
-                },
-                {
                     data: 'description',
                     name: 'description',
                     orderable: false,
@@ -66,10 +60,6 @@
                     name: 'map',
                     orderable: false,
                     searchable: false
-                },
-                {
-                    data: 'created_at',
-                    name: 'created_at',
                 },
                 {
                     data: 'action',
@@ -127,7 +117,7 @@
         $('#saveBtn').click(function(e) {
             e.preventDefault();
             var form = new FormData($('#formProduk')[0]);
-            var konten_id = $('#produk_id').val();
+            var produk_id = $('#produk_id').val();
             form.append('produkimg', $('#produkimg')[0].files[0]);
             $.ajax({
                 data: form,

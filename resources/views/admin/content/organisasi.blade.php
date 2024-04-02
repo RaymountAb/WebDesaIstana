@@ -15,7 +15,7 @@
         <section class="main--content">
             <div class="panel">
                 <div class="table-responsive">
-                    <table id="tabelStatPen" class="table">
+                    <table id="tabelOrganisasi" class="table">
                         <thead>
                             <tr>
                                 <th class="text-center">No</th>
@@ -54,7 +54,7 @@
 
                             <div class="form-group">
                                 <span class="label-text text-md-right">Masukkan SOTK</span>
-                                <div class="image-input image-input-outline image-input-empty" data-kt-image-input="true" id="image-konten" style="background-image: url({{ asset('assets/img/blank2.png') }})">
+                                <div class="image-input image-input-outline image-input-empty" data-kt-image-input="true" id="image-sotk" style="background-image: url({{ asset('assets/img/blank2.png') }})">
                                     <div class="image-input-wrapper w-200px h-200px" style="background-image: url({{ asset('assets/img/blank2.png') }})"></div>
                                     <label class="btn btn-rounded btn-default mb-3 shadow" data-kt-image-input-action="change" data-bs-toggle="tooltip" title="Change Logo">
                                         <i class="fas fa-plus"></i>
@@ -73,7 +73,7 @@
 
                             <div class="form-group">
                                 <span class="label-text text-md-right">Masukkan Gambar Anggota</span>
-                                <div class="image-input image-input-outline image-input-empty" data-kt-image-input="true" id="image-konten" style="background-image: url({{ asset('assets/img/blank2.png') }})">
+                                <div class="image-input image-input-outline image-input-empty" data-kt-image-input="true" id="image-anggota" style="background-image: url({{ asset('assets/img/blank2.png') }})">
                                     <div class="image-input-wrapper w-200px h-200px" style="background-image: url({{ asset('assets/img/blank2.png') }})"></div>
                                     <label class="btn btn-rounded btn-default mb-3 shadow" data-kt-image-input-action="change" data-bs-toggle="tooltip" title="Change Logo">
                                         <i class="fas fa-plus"></i>

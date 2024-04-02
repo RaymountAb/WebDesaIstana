@@ -6810,12 +6810,6 @@ body.page-light .main--footer-light {
     color: #2bb3c0;
 }
 
-@media (min-width: 1200px) {
-    .main--footer {
-        text-align: left;
-    }
-}
-
 
 .image-input {
     position: relative;
@@ -6898,3 +6892,10 @@ body.page-light .main--footer-light {
     border: 3px solid #fff;
     box-shadow: 0 .5rem 1.5rem .5rem rgba(0, 0, 0, .075)
 }
+
+@media (min-width: 1200px) {
+    .main--footer {
+        text-align: left;
+    }
+}
+

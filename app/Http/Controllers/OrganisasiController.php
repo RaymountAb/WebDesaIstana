@@ -19,7 +19,7 @@ class OrganisasiController extends Controller
             return DataTables::of($q_organisasi)
                 ->addIndexColumn()
                 ->addColumn('action', function($q_organisasi){
-                    $btn = '<button data-toggle="tooltip" data-id="' . $q_organisasi->id . '" data-original-title="Edit" class="btn btn-sm btn-primary editorganisasi"> Edit </button>';
+                    $btn = '<button data-toggle="tooltip" data-id="' . $q_organisasi->id . '" data-original-title="Edit" class="btn btn-sm btn-primary editOrganisasi"> Edit </button>';
                     return $btn;
                 })
                 ->rawColumns(['action'])
@@ -89,5 +89,11 @@ class OrganisasiController extends Controller
         $organisasi->save();
         
         return response()->json(['success' => 'Data berhasil diambil.']);
+    }
+
+    public function edit($id)
+    {
+        $organisasi = Organisasi::find($id);
+        return response()->json($organisasi);
     }
 }

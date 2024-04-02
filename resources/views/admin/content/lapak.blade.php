@@ -142,5 +142,5 @@
         <!-- Main Footer End -->
     </main>
 
-    @include('admin.content.js.konten')
+    @include('admin.content.js.lapak')
 @endsection
