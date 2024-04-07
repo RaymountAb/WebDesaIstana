@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use App\Models\Organisasi;
 use Yajra\DataTables\DataTables;
 use Illuminate\Support\Facades\File;
+
 class OrganisasiController extends Controller
 {
     public function index(Request $request)
@@ -14,11 +15,11 @@ class OrganisasiController extends Controller
         $data = [
             'title' => 'Organisasi',
         ];
-        if ($request->ajax()){
+        if ($request->ajax()) {
             $q_organisasi = Organisasi::select('*')->orderBy('id');
             return DataTables::of($q_organisasi)
                 ->addIndexColumn()
-                ->addColumn('action', function($q_organisasi){
+                ->addColumn('action', function ($q_organisasi) {
                     $btn = '<button data-toggle="tooltip" data-id="' . $q_organisasi->id . '" data-original-title="Edit" class="btn btn-sm btn-primary editOrganisasi"> Edit </button>';
                     return $btn;
                 })
@@ -54,16 +55,8 @@ class OrganisasiController extends Controller
             $image_anggota = time() . '_anggotaimg.' . $image->getClientOriginalExtension();
             $destinationPath = public_path('images/organisasi');
 
-            // Resize image using GD Library
-            $resized_image = imagecreatefromjpeg($image->getRealPath());
-            $new_width = 800;
-            $new_height = 800;
-            list($width, $height) = getimagesize($image->getRealPath());
-            $resized_image_tmp = imagecreatetruecolor($new_width, $new_height);
-            imagecopyresampled($resized_image_tmp, $resized_image, 0, 0, 0, 0, $new_width, $new_height, $width, $height);
-            imagejpeg($resized_image_tmp, $destinationPath . '/' . $image_anggota, 100);
-            imagedestroy($resized_image_tmp);
-            imagedestroy($resized_image);
+            // Simpan gambar tanpa perubahan ukuran
+            $image->move($destinationPath, $image_anggota);
         }
 
         $organisasi = Organisasi::find($request->organisasi_id);
@@ -87,7 +80,7 @@ class OrganisasiController extends Controller
         }
 
         $organisasi->save();
-        
+
         return response()->json(['success' => 'Data berhasil diambil.']);
     }
 

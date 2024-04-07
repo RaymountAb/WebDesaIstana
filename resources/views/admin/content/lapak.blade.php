@@ -120,7 +120,7 @@
                                         <i class="fas fa-trash"></i>
                                     </span>
                                 </div>
-                                <div class="form-text">Allowed file types: png, jpg, jpeg.</div>
+                                <div class="form-text">Allowed file types: jpg, jpeg.</div>
                             </div>
         
                             <input type="hidden" name="produk_id" id="produk_id" value="">
@@ -130,6 +130,23 @@
                     <div class="modal-footer">
                         <button type="button" class="btn btn-sm btn-rounded btn-success" id="saveBtn">Ubah</button>
                         <button type="button" class="btn btn-sm btn-rounded btn-outline-secondary" data-dismiss="modal">Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="modalDescription" class="modal fade">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Deskripsi Produk</h5>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <!-- Deskripsi Produk akan ditambahkan ke sini -->
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                     </div>
                 </div>
             </div>

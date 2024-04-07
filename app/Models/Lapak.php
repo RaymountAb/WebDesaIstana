@@ -15,7 +15,7 @@ class Lapak extends Model
     protected $guarded = ['id'];
 
     protected $fillable = [
-        'nama',
+        'name',
         'image',
         'harga',
         'description',

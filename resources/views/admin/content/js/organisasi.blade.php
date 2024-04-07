@@ -30,8 +30,8 @@
                                 '/' + data +
                                 '" alt="' + data + '"/>';
                         } else {
-                            return '<div class="symbol symbol-50px"><img class="img-thumbnail" src="' +
-                                assetBlank + '" alt="__blank"/></div>';
+                            return '<img class="img-thumbnail" src="' +
+                                assetBlank + '" alt="__blank"/>';
                         }
                     },
                     orderable: false,
@@ -47,8 +47,8 @@
                                 '/' + data +
                                 '" alt="' + data + '"/>';
                         } else {
-                            return '<div class="symbol symbol-50px"><img class="img-thumbnail" src="' +
-                                assetBlank + '" alt="__blank"/></div>';
+                            return '<img class="img-thumbnail" src="' +
+                                assetBlank + '" alt="__blank"/>';
                         }
                     },
                     orderable: false,

@@ -2,13 +2,17 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Post;
 use Illuminate\Http\Request;
+use App\Models\StatPen;
 
 class PageController extends Controller
 {
     public function index()
     {
-        return view('content.home');
+        $dataPenduduk = StatPen::all();
+        $posts = Post::latest()->take(6)->get();
+        return view('content.home', ['dataPenduduk' => $dataPenduduk], ['posts' => $posts]);
     }
 
     public function lapak()

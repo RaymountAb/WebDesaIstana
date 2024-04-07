@@ -40,6 +40,18 @@
                 {
                     data: 'content',
                     name: 'content',
+                    render: function(data, type, row) {
+                        if (type === 'display') {
+                            if (data.length > 100) {
+                                return data.substr(0, 100) +
+                                    '... <button class="btn btn-link read-more"><i class="fas fa-plus-circle"></i> Read More</button>';
+                            } else {
+                                return data;
+                            }
+                        } else {
+                            return data;
+                        }
+                    },
                     orderable: false,
                     searchable: false
                 },
@@ -54,6 +66,14 @@
                     searchable: false
                 },
             ]
+        });
+
+        // Event listener untuk menampilkan konten lengkap saat tombol "Read More" ditekan
+        $('#tabelKonten').on('click', '.read-more', function() {
+            var rowData = table.row($(this).closest('tr')).data();
+            // Tampilkan konten lengkap dalam modal atau di tempat lain sesuai kebutuhan
+            $('#modalContent .modal-body').html(rowData.content);
+            $('#modalContent').modal('show');
         });
 
         // csrf token
@@ -87,7 +107,8 @@
                 let images = document.getElementsByClassName("image-input-wrapper");
                 let imageUrl = "url(" + assetUrl + "/" + data.image + ")";
                 if (data.image !== null && data.image !== '') {
-                    document.getElementById("image-konten").classList.remove("image-input-empty");
+                    document.getElementById("image-konten").classList.remove(
+                        "image-input-empty");
                 } else {
                     document.getElementById("image-konten").classList.add("image-input-empty");
                 }

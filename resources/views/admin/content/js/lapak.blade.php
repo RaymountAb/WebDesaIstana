@@ -34,8 +34,8 @@
                     searchable: false
                 },
                 {
-                    data: 'nama',
-                    name: 'nama'
+                    data: 'name',
+                    name: 'name'
                 },
                 {
                     data: 'harga',
@@ -47,7 +47,11 @@
                     data: 'description',
                     name: 'description',
                     orderable: false,
-                    searchable: false
+                    searchable: false,
+                    render: function(data, type, row) {
+                        return '<button class="btn btn-sm btn-primary view-description" data-description="' +
+                            data + '">Lihat Deskripsi</button>';
+                    }
                 },
                 {
                     data: 'link',
@@ -68,6 +72,13 @@
                     searchable: false
                 },
             ]
+        });
+
+        // Tambahkan event listener untuk menampilkan deskripsi dalam modal saat tombol ditekan
+        $('#tabelProduk').on('click', '.view-description', function() {
+            var description = $(this).data('description');
+            $('#modalDescription .modal-body').html(description);
+            $('#modalDescription').modal('show');
         });
 
         // csrf token
@@ -96,7 +107,7 @@
                 $('#saveBtn').val("update");
                 $('#modalProduk').modal('show');
                 $('#produk_id').val(data.id);
-                $('#editnama').val(data.nama);
+                $('#editnama').val(data.name);
                 $('#editharga').val(data.harga);
                 $('#editdeskripsi').val(data.description);
                 $('#editlink').val(data.link);
@@ -167,7 +178,7 @@
                     $.ajax({
                         type: "DELETE",
                         url: "{{ route('lapak.store') }}" + '/' +
-                            konten_id,
+                            produk_id,
                         success: function(data) {
 
                             Swal.fire({

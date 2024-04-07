@@ -19,198 +19,31 @@
             <div class="row">
 
                 <div class="span8">
+                    @foreach ($posts as $post) 
                     <article>
                         <div class="row">
-
                             <div class="span8">
                                 <div class="post-image">
                                     <div class="post-heading">
-                                        <h3><a href="#">PELATIHAN UP2K TP. PKK Desa Istana</a></h3>
+                                        <h3><a href="#">{{ $post->title }}</a></h3>
                                     </div>
-
-                                    <img src="assets/img/post/post1.png" alt="" />
+                                    <img src="{{ asset('images/konten/' . $post->image) }}" alt="" />
                                 </div>
                                 <div class="meta-post">
                                     <ul>
                                         <li><i class="icon-file"></i></li>
-                                        <li>By <a href="#" class="author">Admin</a></li>
-                                        <li>On <a href="#" class="date">10 Maret, 2024</a></li>
+                                        {{-- <li>By <a href="#" class="author">admin</a></li> --}}
+                                        <li>On <a href="#" class="date">{{ $post->created_at->format('d F, Y') }}</a></li>
                                     </ul>
                                 </div>
                                 <div class="post-entry">
-                                    <p>
-                                        Kegiatan Pelatihan ini merupakan salah satu program kerja pokja II Kabupaten
-                                        Ketapang yang bertujuan untuk meningkatkan SDM, agar kader PKK dapat terus
-                                        berinovasi dalam memberikan edukasi baru kepada kelompok usaha baru dalam
-                                        pengembangan ekonomi kreatif bagi para kader UP2K. Sementara itu, anggota PKK Desa
-                                        Istana yang ikut mewakili Kecamatan Sandai dalam kegiatan tersebut berkesempatan
-                                        untuk mengenalkan produk unggulan yang dimiliki yaitu Kopi Kampung dan diberikan
-                                        binaan secara langsung oleh PKK Kabupaten Ketapang
-                                    </p>
+                                    <p>{{ $post->content }}</p>
                                 </div>
                             </div>
                         </div>
                     </article>
-
-                    <article>
-                        <div class="row">
-
-                            <div class="span8">
-                                <div class="post-image">
-                                    <div class="post-heading">
-                                        <h3><a href="#">PENCEGAHAN STUNTING BAGI CALON PENGANTIN</a></h3>
-                                    </div>
-
-                                    <img src="assets/img/post/post2.png" alt="" />
-                                </div>
-                                <div class="meta-post">
-                                    <ul>
-                                        <li><i class="icon-file"></i></li>
-                                        <li>By <a href="#" class="author">Admin</a></li>
-                                        <li>On <a href="#" class="date">10 Maret, 2024</a></li>
-                                    </ul>
-                                </div>
-                                <div class="post-entry">
-                                    <p>
-                                        Kegiatan ini dilakukan oleh pihak petugas kesehatan puskesmas kecamatan sandai yang
-                                        dihadiri Kader PKK, Orangtua CATIN, dan Calon Pengantin. Kegiatan ini bertujuan
-                                        memberikan edukasi kepada calon pengantin mengenai bagaimana cara untuk pencegah
-                                        stunting pada balita. Setelah mengikuti kegiatan ini peserta kegiatan menjadi lebih
-                                        memahami cara mencegah terjadinya stunting dan paham tentang langkah yang tepat
-                                        menurunkan persentase tingkat stunting pada bayi dan balita
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article>
-                        <div class="row">
-
-                            <div class="span8">
-                                <div class="post-image">
-                                    <div class="post-heading">
-                                        <h3><a href="#">KEGIATAN PEMBENTUKAN KELOMPOK KADARKUM</a></h3>
-                                    </div>
-
-                                    <img src="assets/img/post/post3.png" alt="" />
-                                </div>
-                                <div class="meta-post">
-                                    <ul>
-                                        <li><i class="icon-file"></i></li>
-                                        <li>By <a href="#" class="author">Admin</a></li>
-                                        <li>On <a href="#" class="date">10 Maret, 2024</a></li>
-                                    </ul>
-                                </div>
-                                <div class="post-entry">
-                                    <p>
-                                        TP. PKK Desa Istana melaksanakan Pembentukan Kelompok KADARKUM dengan didampingi TP.
-                                        PKK Kecamatan Sandai di Aula Gedung Kesenian Desa Istana. Tujuan kegiatan ini untuk
-                                        meningkatkan kesadaran hokum masyarakat dalam rangka masyarakat berbudaya hokum.
-                                        Selanjutnya dengan terbentuknya kelompok KADARKUM ini, diharapkan setia anggota
-                                        mengetahui dan sadar akan hak dan kewajibannyasebagai Warga Negara Indonesia serta
-                                        mentaati aturan hukum yang berlaku.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article>
-                        <div class="row">
-
-                            <div class="span8">
-                                <div class="post-image">
-                                    <div class="post-heading">
-                                        <h3><a href="#">PERTEMUAN RUTIN DAN PERSIAPAN LOMBA DESA</a></h3>
-                                    </div>
-
-                                    <img src="assets/img/post/post4.png" alt="" />
-                                </div>
-                                <div class="meta-post">
-                                    <ul>
-                                        <li><i class="icon-file"></i></li>
-                                        <li>By <a href="#" class="author">Admin</a></li>
-                                        <li>On <a href="#" class="date">10 Maret, 2024</a></li>
-                                    </ul>
-                                </div>
-                                <div class="post-entry">
-                                    <p>
-                                        Dalam rangka persiapan Lomba Desa yang diselenggarakan oleh Dinas Pemberdayaan
-                                        Masyarakat dan Desa Kabupaten Ketapang, pihak TP. PKK Desa Istana mengadakan
-                                        pertemuan rutin untuk membahas persiapan lomba desa dengan didampingi pihak TP. PKK
-                                        Kecamatan beserta anggotanya untuk melakukan pembinaan agar dapat memaksimalkan
-                                        peran PKK Desa pada saat kegiatan Lomba Desa berlangsung.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article>
-                        <div class="row">
-
-                            <div class="span8">
-                                <div class="post-image">
-                                    <div class="post-heading">
-                                        <h3><a href="#">KEGIATAN GOTONG ROYONG DI KEBUN PKK</a></h3>
-                                    </div>
-
-                                    <img src="assets/img/post/post5.png" alt="" />
-                                </div>
-                                <div class="meta-post">
-                                    <ul>
-                                        <li><i class="icon-file"></i></li>
-                                        <li>By <a href="#" class="author">Admin</a></li>
-                                        <li>On <a href="#" class="date">10 Maret, 2024</a></li>
-                                    </ul>
-                                </div>
-                                <div class="post-entry">
-                                    <p>
-                                        Salah satu bentuk pengamalan 10 program pokok PKK yaitu gotong royong, itulah yang
-                                        saat ini dilakukan ibu-ibu anggota TP. PKK Desa Istana sebagai bentuk pengamalan
-                                        10 program pokok PKK tersebut. Gotong royong ini guna untuk mewujudkan program
-                                        kelestarian lingkungan hidup yaitu membuat kebun untuk bercocok tanam. Kegiatan ini
-                                        dihadiri Ibu Ketua TP. PKK Desa Istana, dan seluruh ketua pokja 1 sampai dengan
-                                        pokja 4 beserta anggotanya.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article>
-                        <div class="row">
-
-                            <div class="span8">
-                                <div class="post-image">
-                                    <div class="post-heading">
-                                        <h3><a href="#">PENYULUHAN PENTINGNYA ASI EKSKLUSIF</a></h3>
-                                    </div>
-
-                                    <img src="assets/img/post/post6.png" alt="" />
-                                </div>
-                                <div class="meta-post">
-                                    <ul>
-                                        <li><i class="icon-file"></i></li>
-                                        <li>By <a href="#" class="author">Admin</a></li>
-                                        <li>On <a href="#" class="date">10 Maret, 2024</a></li>
-                                    </ul>
-                                </div>
-                                <div class="post-entry">
-                                    <p>
-                                        Posyandu Bayi dan Balita di Desa Istana rutin melaksanakan kegiatan posyandu setiap
-                                        bulannya. Mulai dari pengecekan gizi hingga penyuluhan terhadap orangtua bayi dan
-                                        balita yang ada di Desa Istana. Kali ini, pihak puskesmas setempat memberikan
-                                        penyuluhan mengenai pentingnya pemberian ASI Eksklusif. Hal ini dilakukan karena
-                                        terdapat beberapa warga yang tidak memberikan ASI Eksklusif kepada anaknya dengan
-                                        alasan sibuk bekerja, ASI tidak dapat keluar dan lain-lain. Warga sangat antusias
-                                        mengikuti kegiatan ini dan berharap bisa berdiskusi lebih banyak lagi.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </article>
+                        
+                    @endforeach
 
                     <article>
                         <div class="row">
@@ -276,7 +109,7 @@
                                     <p style="margin: 0;">perempuan: <strong>1392</strong></p>
                                 </div>
                             </div>
-                        </div>                        
+                        </div>
 
 
                         <div class="widget">
@@ -297,24 +130,28 @@
     </section>
     <script src="https://code.highcharts.com/highcharts.js"></script>
     <script>
-        // Data jumlah penduduk laki-laki dan perempuan
-        var dataLakiLaki = [355, 400, 419, 396];
-        var dataPerempuan = [336, 358, 401, 297];
-    
-        // Menghitung total keseluruhan laki-laki dan perempuan
-        var totalLakiLaki = dataLakiLaki.reduce((a, b) => a + b, 0);
-        var totalPerempuan = dataPerempuan.reduce((a, b) => a + b, 0);
-    
-        // Inisialisasi Highcharts
+        // Inisialisasi grafik Highcharts dengan data dari controller
+        var dataLakiLaki = [];
+        var dataPerempuan = [];
+        var categories = [];
+
+        // Mengisi data dari variabel yang dikirimkan dari controller
+        @foreach ($dataPenduduk as $data)
+            categories.push('{{ $data->daerah }}');
+            dataLakiLaki.push({{ $data->lelaki }});
+            dataPerempuan.push({{ $data->perempuan }});
+        @endforeach
+
+        // Menggunakan data untuk menginisialisasi Highcharts
         Highcharts.chart('chartpenduduk', {
             chart: {
-                type: 'column' // Jenis diagram: batang
+                type: 'column'
             },
             title: {
                 text: 'Statistik Penduduk'
             },
             xAxis: {
-                categories: ['Kediuk', 'Tebing Tinggi', 'Taruna', 'Terap'], // Nama daerah
+                categories: categories,
                 crosshair: true
             },
             yAxis: {
@@ -325,12 +162,12 @@
             },
             series: [{
                 name: 'Laki-laki',
-                color: 'blue', // Warna biru
-                data: dataLakiLaki // Data jumlah penduduk laki-laki
+                color: 'blue',
+                data: dataLakiLaki
             }, {
                 name: 'Perempuan',
-                color: 'pink', // Warna pink
-                data: dataPerempuan // Data jumlah penduduk perempuan
+                color: 'pink',
+                data: dataPerempuan
             }],
             tooltip: {
                 headerFormat: '<span style="font-size:10px">{point.key}</span><table>',

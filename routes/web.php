@@ -20,9 +20,7 @@ use App\Http\Controllers\LapakController;
 |
 */
 
-Route::get('/', function () {
-    return view('content.home');
-});
+Route::get('/', [PageController::class, 'index']);
 Route::get('beranda', [PageController::class, 'index']);
 Route::get('lapakdesa', [PageController::class, 'lapak']);
 Route::get('peta', [PageController::class, 'peta']);

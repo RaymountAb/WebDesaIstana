@@ -44,7 +44,7 @@
                     </div>
 
                     <div class="modal-body pt-4">
-                        <form id="formeditPenduduk" name="formeditPenduduk" action="#" autocomplete="off">
+                        <form id="formOrganisasi" name="formOrganisasi" action="#" autocomplete="off">
                             <div class="form-group">
                                 <label>
                                     <span class="label-text">Nama Organisasi</span>

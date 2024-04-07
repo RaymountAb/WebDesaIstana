@@ -42,7 +42,7 @@ class KontenController extends Controller
 
             // Resize image using GD Library
             $resized_image = imagecreatefromjpeg($image->getRealPath());
-            $new_width = 800;
+            $new_width = 1200;
             $new_height = 800;
             list($width, $height) = getimagesize($image->getRealPath());
             $resized_image_tmp = imagecreatetruecolor($new_width, $new_height);

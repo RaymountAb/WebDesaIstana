@@ -110,6 +110,21 @@
                 </div>
             </div>
         </div>
+
+        <div id="modalContent" class="modal fade">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Konten Lengkap</h5>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <!-- Konten lengkap akan ditambahkan ke sini -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        
         
         <!-- Main Footer Start -->
         <footer class="main--footer main--footer-light">

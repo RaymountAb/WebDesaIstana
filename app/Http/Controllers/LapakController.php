@@ -36,10 +36,10 @@ class LapakController extends Controller
     public function store(Request $request)
     {
         $image_name = null;
-        if ($request->hasFile('lapakimg')) {
-            $image = $request->file('lapakimg');
-            $image_name = time() . '_lapakimg.' . $image->getClientOriginalExtension();
-            $destinationPath = public_path('images/lapak');
+        if ($request->hasFile('produkimg')) {
+            $image = $request->file('produkimg');
+            $image_name = time() . '_produkimg.' . $image->getClientOriginalExtension();
+            $destinationPath = public_path('images/produk');
 
             // Resize image using GD Library
             $resized_image = imagecreatefromjpeg($image->getRealPath());
@@ -59,12 +59,12 @@ class LapakController extends Controller
             $lapak = new Lapak();
         }
 
-        $lapak->nama = $request->editnama;
+        $lapak->name = $request->editnama;
         $lapak->harga = $request->editharga;
         $lapak->description = $request->editdeskripsi;
         $lapak->link = $request->editlink;
         $lapak->map = $request->editmaps;
-        if ($image_name != null || $request->lapak_remove) {
+        if ($image_name != null || $request->produk_remove) {
             if ($lapak->image !== null && $lapak->image != '') {
                 $image_path = public_path('/images/produk/' . $lapak->image);
                 if (File::exists($image_path)) {
