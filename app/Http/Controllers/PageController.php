@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Lapak;
 use App\Models\Organisasi;
 use App\Models\Post;
 use Illuminate\Http\Request;
@@ -18,7 +19,8 @@ class PageController extends Controller
 
     public function lapak()
     {
-        return view('content.lapak');
+        $dataLapak = Lapak::all();
+        return view('content.lapak', ['dataLapak' => $dataLapak]);
     }
 
     public function peta()

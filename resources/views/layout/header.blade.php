@@ -67,7 +67,7 @@
                                     <a href="/peta">Peta </a>
                                 </li>
                                 <li>
-                                    <a href="/lapakdesa">Lapak Desa </a>
+                                    <a href="/lapakdesa">Usaha Desa </a>
                                 </li>
                             </ul>
                         </nav>

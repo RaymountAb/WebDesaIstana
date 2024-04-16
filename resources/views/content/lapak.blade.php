@@ -6,7 +6,7 @@
             <div class="row">
                 <div class="span12">
                     <div class="inner-heading">
-                        <h2>Lapak Desa</h2>
+                        <h2>Produk Usaha Desa</h2>
                     </div>
                 </div>
             </div>
@@ -21,39 +21,23 @@
                     <div class="row">
                         <section id="team">
                             <ul id="thumbs" class="team">
-                                <li class="item-thumbs span3 design" data-id="id-0" data-type="design">
+                                @foreach($dataLapak as $lapak)
+                                <li class="item-thumbs span3 design" data-id="{{ $lapak->id }}" data-type="design">
                                     <div class="team-box thumbnail">
-                                        <img src="assets/img/lapak/lapak1.jpg" alt="" class="lapak-img" />
+                                        <img src="{{ asset('images/produk/' . $lapak->image) }}" alt="" />
                                         <div class="caption">
-                                            <h3>Kerupuk Ikan</h3>
-                                            <h5>Rp. 15.000</h5>
-                                            <p>
-                                                Keripik terbuat dari ikan tenggiri. rasa memuaskan dan murah di harga
-                                            </p>
+                                            <h3>{{ $lapak->name }}</h3>
+                                            <h5>Rp. {{ number_format($lapak->harga, 0, ',', '.') }}</h5>
+                                            <p>{{ $lapak->description }}</p>
                                             <div class="btn-group">
-                                                <button class="btn btn-primary"><i class="fas fa-shopping-cart"></i> Pesan</button>
-                                                <button class="btn btn-success"><i class="fas fa-map-marker"></i> Lokasi</button>
+                                                <a href="{{ $lapak->link }}" class="btn btn-primary" target="_blank"><i class="fas fa-shopping-cart"></i> Pesan</a>
+                                                <a href="{{ $lapak->map }}" class="btn btn-success" target="_blank"><i class="fas fa-map-marker"></i> Lokasi</a>
                                             </div>
                                         </div>
                                     </div>
                                 </li>
-                                <li class="item-thumbs span3 design" data-id="id-0" data-type="design">
-                                    <div class="team-box thumbnail">
-                                        <img src="assets/img/lapak/lapak2.jpg" alt="" class="lapak-img" />
-                                        <div class="caption">
-                                            <h3>Dodol Lidah Buaya</h3>
-                                            <h5>Rp. 35.000</h5>
-                                            <p>
-                                                Dodol terbuat dari lidah buaya. rasa manis dan segar
-                                            </p>
-                                            <div class="btn-group">
-                                                <button class="btn btn-primary"><i class="fas fa-shopping-cart"></i> Pesan</button>
-                                                <button class="btn btn-success"><i class="fas fa-map-marker"></i> Lokasi</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>                                
-                            </ul>
+                                @endforeach
+                            </ul>                            
                         </section>
 
                     </div>
