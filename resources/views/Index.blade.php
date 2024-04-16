@@ -20,14 +20,14 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 
   <!-- Theme skin -->
-  <link href="assets/color/default.css" rel="stylesheet" />
+  <link href="{{ asset('assets/color/default.css') }}" rel="stylesheet" />
 
   <!-- Fav and touch icons -->
   <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/icon/apple-touch-icon-144-precomposed.png" />
   <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/icon/apple-touch-icon-114-precomposed.png" />
   <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/icon/apple-touch-icon-72-precomposed.png" />
   <link rel="apple-touch-icon-precomposed" href="assets/icon/apple-touch-icon-57-precomposed.png" />
-  <link rel="shortcut icon" href="assets/icon/favicon.png" />
+  <link rel="shortcut icon" href="{{ asset('assets/icon/favicon.png') }}" />
 </head>
 
 <body>
