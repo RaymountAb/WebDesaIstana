@@ -19,30 +19,30 @@
             <div class="row">
 
                 <div class="span8">
-                    @foreach ($posts as $post) 
-                    <article>
-                        <div class="row">
-                            <div class="span8">
-                                <div class="post-image">
-                                    <div class="post-heading">
-                                        <h3><a href="#">{{ $post->title }}</a></h3>
+                    @foreach ($posts as $post)
+                        <article>
+                            <div class="row">
+                                <div class="span8">
+                                    <div class="post-image">
+                                        <div class="post-heading">
+                                            <h3><a href="#">{{ $post->title }}</a></h3>
+                                        </div>
+                                        <img src="{{ asset('images/konten/' . $post->image) }}" alt="" />
                                     </div>
-                                    <img src="{{ asset('images/konten/' . $post->image) }}" alt="" />
-                                </div>
-                                <div class="meta-post">
-                                    <ul>
-                                        <li><i class="icon-file"></i></li>
-                                        {{-- <li>By <a href="#" class="author">admin</a></li> --}}
-                                        <li>On <a href="#" class="date">{{ $post->created_at->format('d F, Y') }}</a></li>
-                                    </ul>
-                                </div>
-                                <div class="post-entry">
-                                    <p>{{ $post->content }}</p>
+                                    <div class="meta-post">
+                                        <ul>
+                                            <li><i class="icon-file"></i></li>
+                                            {{-- <li>By <a href="#" class="author">admin</a></li> --}}
+                                            <li>On <a href="#"
+                                                    class="date">{{ $post->created_at->format('d F, Y') }}</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="post-entry">
+                                        <p>{{ $post->content }}</p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </article>
-                        
+                        </article>
                     @endforeach
 
                     <article>
@@ -70,8 +70,7 @@
                         <div class="widget">
                             <form>
                                 <div class="input-append">
-                                    <input class="span2" id="appendedInputButton" type="text"
-                                        placeholder="Type here">
+                                    <input class="span2" id="appendedInputButton" type="text" placeholder="Type here">
                                     <button class="btn btn-theme" type="submit">Search</button>
                                 </div>
                             </form>
@@ -103,10 +102,10 @@
                             <div id="chartpenduduk" style="width:100%; height:400px;"></div>
                             <div style="display: flex; justify-content: space-between;">
                                 <div>
-                                    <p style="margin: 0;">laki-laki: <strong>1570</strong></p>
+                                    <p style="margin: 0;">laki-laki: <strong id="totalLaki"></strong></p>
                                 </div>
                                 <div>
-                                    <p style="margin: 0;">perempuan: <strong>1392</strong></p>
+                                    <p style="margin: 0;">perempuan: <strong id="totalPerempuan"></strong></p>
                                 </div>
                             </div>
                         </div>
@@ -141,6 +140,14 @@
             dataLakiLaki.push({{ $data->lelaki }});
             dataPerempuan.push({{ $data->perempuan }});
         @endforeach
+
+        // Menghitung total laki-laki dan perempuan
+        var totalLaki = dataLakiLaki.reduce((a, b) => a + b, 0);
+        var totalPerempuan = dataPerempuan.reduce((a, b) => a + b, 0);
+
+        // Menambahkan informasi total ke dalam elemen HTML
+        document.getElementById('totalLaki').innerText = totalLaki;
+        document.getElementById('totalPerempuan').innerText = totalPerempuan;
 
         // Menggunakan data untuk menginisialisasi Highcharts
         Highcharts.chart('chartpenduduk', {

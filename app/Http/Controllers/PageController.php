@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Organisasi;
 use App\Models\Post;
 use Illuminate\Http\Request;
 use App\Models\StatPen;
@@ -67,26 +68,31 @@ class PageController extends Controller
 
     public function taruna()
     {
-        return view('content.karangtaruna');
+        $dataTaruna = Organisasi::where('nama', 'Karang Taruna')->get(); 
+        return view('content.karangtaruna', ['dataTaruna' => $dataTaruna]);
     }
 
     public function pkk()
     {
-        return view('content.pkk');
+        $dataPkk = Organisasi::where('nama', 'PKK Desa')->get();
+        return view('content.pkk', ['dataPkk' => $dataPkk]);
     }
 
     public function posyandu()
     {
-        return view('content.posyandu');
+        $dataPosyandu = Organisasi::where('nama', 'Posyandu Permata Bunda')->get();
+        return view('content.posyandu', ['dataPosyandu' => $dataPosyandu]);
     }
 
     public function bpddesa()
     {
-        return view('content.bpd');
+        $dataBpd = Organisasi::where('nama', 'BPD Desa')->get();
+        return view('content.bpd', ['dataBpd' => $dataBpd]);
     }
 
     public function bumdes()
     {
-        return view('content.bumdes');
+        $dataBumdes = Organisasi::where('nama', 'BumDes')->get();
+        return view('content.bumdes', ['dataBumdes' => $dataBumdes]);
     }
 }
