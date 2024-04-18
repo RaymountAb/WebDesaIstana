@@ -20,7 +20,7 @@
                             <div class="miniStats--body">
                                 <i class="miniStats--icon fa fa-user text-blue"></i>
                                 <h3 class="miniStats--title h4">Jumlah Laki-laki</h3>
-                                <p class="miniStats--num text-blue">13 Orang</p>
+                                <p class="miniStats--num text-blue">{{ $totalLelaki }} Orang</p>
                             </div>
                         </div>
                     </div>
@@ -31,11 +31,11 @@
                             <div class="miniStats--body">
                                 <i class="miniStats--icon fa fa-user text-red"></i>
                                 <h3 class="miniStats--title h4">Jumlah Perempuan</h3>
-                                <p class="miniStats--num text-red">13 Orang</p>
+                                <p class="miniStats--num text-red">{{ $totalPerempuan }} Orang</p>
                             </div>
                         </div>
                     </div>
-                </div>
+                </div>                
             </div>
         </section>
         <!-- Main Content End -->
