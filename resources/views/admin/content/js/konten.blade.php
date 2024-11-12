@@ -141,13 +141,12 @@
                     });
                 },
                 error: function(data) {
-                    console.log('Error:', data);
                     Swal.fire({
                         icon: 'error',
                         title: 'Oops...',
                         text: 'Terjadi Kesalahan!',
                         showConfirmButton: false,
-                        timer: 1500 // Durasi alert
+                        timer: 1500
                     });
                 }
             });
